@@ -13,7 +13,13 @@ variable "environment" {
   type        = string
 }
 
-variable "my_ip_cidr" {
-  description = "Your public IP in CIDR format, for example x.x.x.x/32"
+variable "instance_type" {
+  description = "EC2 instance type"
+  type        = string
+  default     = "t3.small"
+}
+
+variable "admin_cidr" {
+  description = "Admin public IP in CIDR format"
   type        = string
 }
